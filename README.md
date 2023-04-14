@@ -1,10 +1,11 @@
-# F1 Results API 
+# Java Lab SpringBoot Rest 
 
-![CC0 Public Domain](https://raw.githubusercontent.com/afv9988/F1-Results-API/main/src/main/resources/RB19.jpg)
+![Java Lab](https://raw.githubusercontent.com/Apex-CS/Java-Lab-SpringBoot-Rest/main/src/main/resources/Banner.png)
+<img src="https://raw.githubusercontent.com/Apex-CS/Java-Lab-SpringBoot-Rest/main/src/main/resources/RB19.jpg" width="917">
 ![Coverage](.github/badges/jacoco.svg)
 ![Branch](.github/badges/branches.svg)
-![Test](https://github.com/afv9988/F1-Results-API/actions/workflows/docker-push.yaml/badge.svg)
-![Test](https://github.com/afv9988/F1-Results-API/actions/workflows/tests-embedded.yaml/badge.svg)
+![Test](https://github.com/Apex-CS/Java-Lab-SpringBoot-Rest/actions/workflows/docker-push.yaml/badge.svg)
+![Test](https://github.com/Apex-CS/Java-Lab-SpringBoot-Rest/actions/workflows/tests-embedded.yaml/badge.svg)
 
 This is a simple API Code Example for consume F1 historical results 
 
@@ -23,7 +24,6 @@ Features:
 - Unit testing with embedded DB (h2 engine)
 - Docker build and push to Docker Hub
 - Docker compose files for API and DB Only
-- Updated until Saudi Arabian Grand Prix *
 
 # Steps to install
 
@@ -77,7 +77,3 @@ For external use of token add -H "Authorization: YOUR-TOKEN-GENERATED"
 * [Spring Initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.9&packaging=war&jvmVersion=1.8&groupId=com.apex&artifactId=demo&name=demo&description=F1%20API%20using%20GraphQL%20-%20Spring%20Boot%20-%20Mockito&packageName=com.apex.demo&dependencies=web,data-jpa,postgresql,graphql)
 
 * [F1 Datasets](https://ergast.com/mrd/db/)
-
-## Resources
-
-* [Terms & Conditions](https://raw.githubusercontent.com/afv9988/F1-Results-API/main/src/main/resources/TNC.txt)
