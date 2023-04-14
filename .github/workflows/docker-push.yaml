@@ -1,0 +1,39 @@
+name: Docker Build an Push
+
+on: push
+
+jobs:
+  container-job:
+    runs-on: ubuntu-latest
+    container: bitnami/git:latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: f1_user
+          POSTGRES_PASSWORD: a912072
+          POSTGRES_DB: f1_db
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up the Java JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Prepare Maven
+        run: chmod +x mvnw
+      - name: Launch tests
+        run: ./mvnw install -D spring.profiles.active=test
+        env:
+          POSTGRES_HOST: postgres
+      - name: Docker build
+        run: ./mvnw dockerfile:build
+      - name: Docker push
+        run: ./mvnw dockerfile:push -Ddocker.usr=${{secrets.DOCKER_USR}} -Ddocker.pasw=${{secrets.DOCKER_PASW}}
+
