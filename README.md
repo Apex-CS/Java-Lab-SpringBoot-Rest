@@ -1,4 +1,4 @@
-# Java Lab SpringBoot Rest 
+# Java Lab Spring Boot Rest 
 
 ![Java Lab](https://raw.githubusercontent.com/Apex-CS/Java-Lab-SpringBoot-Rest/main/src/main/resources/Banner.png)
 <img src="https://raw.githubusercontent.com/Apex-CS/Java-Lab-SpringBoot-Rest/main/src/main/resources/RB19.jpg" width="917">
@@ -15,15 +15,16 @@ Features:
 - PostgreSQL
 - Mockito
 - Pagination
+- Lombook
 - JWT
 - JaCoCo
-- mvn Profiles
+- MVN Profiles
 - GitHub Actions
 - GitHub Secrets
 - GitHub Badges
 - Unit testing with embedded DB (h2 engine)
 - Docker build and push to Docker Hub
-- Docker compose files for API and DB Only
+- Docker compose files for API and DB
 
 # Steps to install
 
@@ -32,11 +33,11 @@ Features:
 * Maven
 * Docker
 * (Optional) PostgreSQL Server
-  * This is only necesary only if you want to create your DB from scratch
+  * This is only necessary only if you want to create your DB from scratch
 
 ## 2.- Clone this repo
 ```
-git clone https://github.com/afv9988/F1-Results-API.git
+git clone https://github.com/Apex-CS/Java-Lab-SpringBoot-Rest.git
 mvn clean install
 ```
 
@@ -77,3 +78,5 @@ For external use of token add -H "Authorization: YOUR-TOKEN-GENERATED"
 * [Spring Initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.9&packaging=war&jvmVersion=1.8&groupId=com.apex&artifactId=demo&name=demo&description=F1%20API%20using%20GraphQL%20-%20Spring%20Boot%20-%20Mockito&packageName=com.apex.demo&dependencies=web,data-jpa,postgresql,graphql)
 
 * [F1 Datasets](https://ergast.com/mrd/db/)
+
+* [Terms & Conditions](https://raw.githubusercontent.com/Apex-CS/Java-Lab-SpringBoot-Rest/main/src/main/resources/TNC.txt)

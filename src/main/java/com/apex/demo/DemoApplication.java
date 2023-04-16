@@ -45,10 +45,10 @@ public class DemoApplication {
 				"F1 Results API",
 				"This is an API for request the last results and statistics of F1",
 				"1.0",
-				"https://raw.githubusercontent.com/afv9988/F1-Results-API/main/src/main/resources/TNC.txt",
+				"https://raw.githubusercontent.com/Apex-CS/Java-Lab-SpringBoot-Rest/main/src/main/resources/TNC.txt",
 				new Contact("Angel Flores", "https://www.linkedin.com/in/angel-flores-olivas/", "afv9988@gmail.com"),
 				"License of API",
-				"https://raw.githubusercontent.com/afv9988/F1-Results-API/main/src/main/resources/TNC.txt",
+				"https://raw.githubusercontent.com/Apex-CS/Java-Lab-SpringBoot-Rest/main/src/main/resources/TNC.txt",
 				Collections.emptyList());
 	}
 	@Bean
