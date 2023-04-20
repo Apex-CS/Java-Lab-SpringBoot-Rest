@@ -15,11 +15,6 @@ public class ResultsController {
     @Autowired
     private ResultsServices resultService;
 
-    @GetMapping(value = "/{id}")
-    public @ResponseBody Results getById(@PathVariable int id) {
-        return resultService.getById(id);
-    }
-
     @GetMapping(value = "/byPosition/{position}")
     public @ResponseBody List<Results> getPosition(@PathVariable int position,
                                                    @RequestParam(defaultValue = "0") int page,

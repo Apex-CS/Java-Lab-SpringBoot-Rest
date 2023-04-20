@@ -41,19 +41,6 @@ public class ResultControllerTest {
     private MockMvc mvc;
 
     @Test
-    public void getByIdTest() throws Exception {
-        int id = 25840;
-        // Given
-        when(resultService.getById(id)).thenReturn(DummyResults.ONE_RESULTLIST.get(0));
-        // When
-        mvc.perform(get("/api/v1/{id}", id)
-                        .header("Authorization", TOKEN)
-                        .contentType(MediaType.APPLICATION_JSON))
-                // then
-                .andExpect(status().isOk())
-                .andExpect(content().string(containsString(""+id)));
-    }
-    @Test
     public void findByPositionTest() throws Exception {
         int position = 0;
         // Given

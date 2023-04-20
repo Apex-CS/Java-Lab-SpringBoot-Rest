@@ -138,14 +138,4 @@ public class ResultsServiceTest {
         assertEquals(1, arraySurnames.size());
         assertEquals(surename, arraySurnames.get(0).getSurname());
     }
-    @Test
-    public void findByIdTest() {
-        int id = 25840;
-        // Given
-        when(resultsRepository.findById(id)).thenReturn(DummyResults.ONE_RESULTLIST.get(0));
-        // When
-        Results results = resultService.getById(id);
-        // then
-        assertEquals(id, results.getId());
-    }
 }

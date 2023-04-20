@@ -10,7 +10,6 @@ import java.util.List;
 @Repository
 public interface ResultsRepository  extends CrudRepository<Results, Long> {
 
-    Results findById(int id);
     List<Results> findByPosition(int position, Pageable pageable);
     List<Results> findByDate(String date, Pageable pageable);
     List<Results> findByRace(String name, Pageable pageable);
